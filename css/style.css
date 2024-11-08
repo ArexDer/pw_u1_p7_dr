@@ -1,0 +1,25 @@
+
+*{
+    background: wheat;
+    text-align: center;
+}
+
+
+h1{
+    color: rgb(213, 38, 219);
+  
+
+}
+h2{
+    color: rgb(55, 120, 177);
+}
+p{
+    background: rgb(185, 163, 121);
+}
+
+button{
+    color: chartreuse;
+    background: black;
+    border-radius: 8px;
+    padding: 10px;
+}
