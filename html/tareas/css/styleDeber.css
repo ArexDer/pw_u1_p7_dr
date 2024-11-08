@@ -1,0 +1,22 @@
+*{
+    background-color: #90a955;
+    text-align: center;
+}
+
+h1,h2{
+    background: #ecf39e;
+    color: #4f772d;
+}
+
+p{
+    color: 132a13;
+    font-family: fantasy;
+
+}
+button{
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: sandybrown;
+    font-family: monospace;
+
+}
