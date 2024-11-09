@@ -1,17 +1,19 @@
-
+/*Centrados Generales*/
 *{
-    background: wheat;
+    background: rgb(60, 109, 216);
     text-align: center;
 }
 
 
+
+
 h1{
-    color: rgb(213, 38, 219);
+    color: rgb(175, 231, 20);
   
 
 }
 h2{
-    color: rgb(55, 120, 177);
+    color: rgb(37, 218, 21);
 }
 p{
     background: rgb(185, 163, 121);
@@ -21,5 +23,89 @@ button{
     color: chartreuse;
     background: black;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 30px;
+}
+
+button:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(33, 245, 5);
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+
+.titulos{
+    color: rgb(250, 250, 250);
+    font-size: 15px;
+}
+
+input{
+    background-color: white;
+}
+
+#id_pie_pagina_uce {
+    font-size: 17px;
+    color: chartreuse;
+    text-decoration: underline;
+    background: black;
+}
+
+#id_pie_pagina_uce:hover {
+    font-size: 17px;
+    color: rgb(13, 14, 13);
+    background: white;
+
+   
+}
+img[src]{
+   
+    padding: 20px;
+    width:120px;
+    height: 110px;
+}
+
+/* OTRA FORMA DE HACERLO ES
+img[src = "valorque quiera es decir la URL."]{
+    
+    padding: 20px;
+    width:120px;
+    height: 110px;
+}
+*/
+
+/* Todas las imagenes cuyo SRC -- almenos tenga este texto
+con el "*" quiere decir que tiene mas cosas y ".png"
+
+img[src*= ".png"]{
+    
+    padding: 20px;
+    width:120px;
+    height: 110px;
+}
+
+*/
+
+input[type]{
+    background: yellow;
+}
+
+input[type="text"]{
+    background: rgb(119, 226, 93);
+}
+
+input[type="date"]{
+    background: rgb(119, 226, 93);
+    padding: 0px 27px;
+}
+#ejercicio_clase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* Convinacion de Selectores */
+/* Para que no se duplique código */
+h1,h3,h5{
+    background: sienna;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
