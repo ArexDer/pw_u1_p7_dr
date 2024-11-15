@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+        
+        function cambiarFondo(idelemento, valor){
+           document.getElementById(idelemento).style.background=valor;
+        }
+        function cambiarAlineadoTexto(idelemento,alineado){
+            document.getElementById(idelemento).style.textAlign=alineado;
+
+        }
+        function cambiarFondoLabel(idelemento,fondo){
+            document.getElementById(idelemento).style.background=fondo;
+
+        }
+        function agregarElemento(idelemento, elementoHTML){
+            document.getElementById(idelemento).innerHTML=document.getElementById(idelemento).innerHTML+elementoHTML;
+
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body id="body">
+    <header>
+       
+    </header>
+    <nav>
+        <ul id="idmenu">
+            <li>Calculadora Cient&#237;fica 1</li>
+            <li>Calculadora Cient&#237;fica 2</li>
+            <li>Calculadora Cient&#237;fica 3</li>
+            <li>Calculadora Cient&#237;fica 4</li>
+        </ul>
+    </nav>
+
+    <section>
+        <label id="label1" for="numero1">Nombre</label>
+        <input  id="numero1" type="number">
+        <label id="label2" for="numero2">Apellido</label>
+        <input  id="numero2" type="number">
+
+        <br>
+        <!--DOCUMENT las paginas son llamadas como Documento
+        document.getElementById('label1') :Puedo usar los atributos de ese elemento
+        -->
+        <button onclick="cambiarFondo('body','#be95c4')">Cambiar Fondo</button>
+        <button onclick="cambiarAlineadoTexto('idmenu', 'center')">Centrar Lista</button>
+        <button onclick="cambiarFondoLabel('label1','#a98467')">Cambiar Fondo Apellido</button>
+        <button onclick="agregarElemento('idmenu','<li>Calculadora Cient&#237;fica nueva</li>')">Agregar Elemento</button>
+    </section>
+    <footer></footer>
+    
+</body>
+</html>

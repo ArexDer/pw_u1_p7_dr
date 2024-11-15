@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea JS en Linea</title>
+</head>
+<body id="body">
+    <header>
+       
+    </header>
+    <nav>
+        <ul id="idmenu">
+            <li>Calculadora Cient&#237;fica 1</li>
+            <li>Calculadora Cient&#237;fica 2</li>
+            <li>Calculadora Cient&#237;fica 3</li>
+            <li>Calculadora Cient&#237;fica 4</li>
+        </ul>
+    </nav>
+
+    <section>
+        <label id="label1" for="numero1">Nombre</label>
+        <input  id="numero1" type="number">
+        <label id="label2" for="numero2">Apellido</label>
+        <input  id="numero2" type="number">
+
+        <br>
+        <!--DOCUMENT las paginas son llamadas como Documento
+        document.getElementById('label1') :Puedo usar los atributos de ese elemento
+        -->
+        <button  onclick="document.getElementById('body').style.background='#faedcd'">Cambiar Fondo</button>
+        <button onclick="document.getElementById('idmenu').style.textAlign='center'">Centrar Lista</button>
+        <button onclick="document.getElementById('label2').style.background='#48cae4'">Cambiar Fondo Apellido</button>
+        <button onclick="document.getElementById('idmenu').innerHTML=document.getElementById('idmenu').innerHTML+' <li>Calculadora Cient&#237;fica 5</li>'">Agregar Elemento</button>
+    </section>
+    <footer></footer>
+</body>
+</html>

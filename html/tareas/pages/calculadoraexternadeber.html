@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jsxternotarea.js"></script>
+    <title>Calculadora Externa Deber</title>
+</head>
+<body id="body">
+    <header>
+       
+    </header>
+    <nav>
+        <ul id="idmenu">
+            <li>Calculadora Cient&#237;fica 1</li>
+            <li>Calculadora Cient&#237;fica 2</li>
+            <li>Calculadora Cient&#237;fica 3</li>
+            <li>Calculadora Cient&#237;fica 4</li>
+        </ul>
+    </nav>
+
+    <section>
+        <label id="label1" for="numero1">Nombre</label>
+        <input  id="numero1" type="number">
+        <label id="label2" for="numero2">Apellido</label>
+        <input  id="numero2" type="number">
+
+        <br>
+        <!--DOCUMENT las paginas son llamadas como Documento
+        document.getElementById('label1') :Puedo usar los atributos de ese elemento
+        -->
+        <button onclick="cambiarFondo('body','#ffba08')">Cambiar Fondo</button>
+        <button onclick="cambiarAlineadoTexto('idmenu', 'center')">Centrar Lista</button>
+        <button onclick="cambiarFondoLabel('label1','#dc2f02')">Cambiar Fondo Apellido</button>
+        <button onclick="agregarElemento('idmenu','<li>Calculadora Cient&#237;fica  Externa</li>')">Agregar Elemento</button>
+    </section>
+    <footer></footer>
+    
+</body>
+</html>
