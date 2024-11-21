@@ -1,0 +1,53 @@
+
+
+.container{
+   /* background: #e0e1dd;*/
+    display: flex; /* Me perimite manipular el contenido del contenedor flexible */
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    background-color: #778da9;
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;/*determina el tamaño de al fila*/
+    padding: 22px;
+    /*border: solid blue;*/
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px 5px rgb(56, 53, 53);
+    gap: 3px;
+   
+}
+
+.display{
+    /* Como esta interno en al calculadora
+     y para darle un estilo a este elemento lo hago 
+     con gid colum */
+    background-color: #0d1b2a;
+    grid-column: span 4;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: right;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 22px;
+    
+    
+  
+}
+.cero{
+    grid-column: span 2;
+}
+.c{
+    grid-column: span 2;
+
+}
+
+  button{
+    border: solid rgb(90, 86, 86);;
+  }
+  button:hover{
+    background-color: rgb(116, 112, 107);
+    color: white;
+  }
+
