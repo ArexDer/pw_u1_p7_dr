@@ -5,17 +5,19 @@
     display: flex; /* Me perimite manipular el contenido del contenedor flexible */
     justify-content: center;
     align-items: center;
+   
 }
 .calculadora{
     background-color: #778da9;
     display: grid;
     grid-template-columns: 70px 70px 70px 70px;
     grid-template-rows: 50px 50px 50px 50px 50px 50px;/*determina el tamaño de al fila*/
-    padding: 22px;
+    padding: 42px 15px 22px 15px;
     /*border: solid blue;*/
     border-radius: 30px;
     box-shadow: 5px 10px 5px 5px rgb(56, 53, 53);
-    gap: 3px;
+    gap:4px;
+  
    
 }
 
@@ -44,10 +46,32 @@
 }
 
   button{
-    border: solid rgb(90, 86, 86);;
+    border: outset rgb(48, 87, 146);
+    cursor: pointer;
+    margin: 2.1px;
+    border-radius: 14px;
+    background: wheat;
+    font-size: 22px;
+    color: black;
+    box-shadow: 2px 4px 1px 2px rgb(83, 56, 56);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+
+  /*
+  Poner siempre el primer estilo con
+   el que trabajare HOVER--- ACTIVE
+   */
+   
+
   button:hover{
     background-color: rgb(116, 112, 107);
     color: white;
+    border: outset rgb(252, 252, 252);
   }
 
+  button:active{
+    background-color: rgb(35, 43, 148);
+  }
+  
+ 
+  

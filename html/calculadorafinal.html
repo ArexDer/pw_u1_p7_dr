@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="../css/stylecalculadorafinal.css" />
+    <script src="../js/jscalculadorafinal.js"></script>
     <title>Calculadora Final</title>
+   
   </head>
   <body>
     <header></header>
@@ -12,28 +15,33 @@
 
     <section>
       <div class="container">
-        <div class="calculadora">
-          
-          <div class="display">1+2</div>
+        <div class="calculadora">    
+           
+          <div class="display" id="id-display" >000</div>
           <button class="c">C</button>
           <button>&larr;</button>
-          <button>%</button>
+          <button onclick="evaluarOperacion('/')">/</button>
           
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>x</button>
-          <button>4</button>
-          <button id="num5">5</button>
-          <button>6</button>
-          <button>-</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>+</button>
-          <button class="cero">0</button>
-          <button>.</button>
-          <button>=</button>
+          <button id="btn7" onclick="recibirValor1(7)">7</button>
+          <button id="btn8" onclick="recibirValor1(8)">8</button>
+          <button id="btn9" onclick="recibirValor1(9)">9</button>
+
+          <button id="btnx" onclick="evaluarOperacion('x')">x</button>
+
+          <button id="btn4" onclick="recibirValor1(4)">4</button>
+          <button id="btn5" onclick="recibirValor1(5)">5</button>
+          <button id="btn6" onclick="recibirValor1(6)">6</button>
+
+          <button id="btn-" onclick="evaluarOperacion('-')">-</button>
+
+          <button id="btn1" onclick="recibirValor1(1)">1</button>
+          <button id="btn2" onclick="recibirValor1(2)">2</button>
+          <button id="btn3" onclick="recibirValor1(3)">3</button>
+
+          <button id="btnSuma" onclick="evaluarOperacion('+')">+</button>
+          <button id="btnCero" class="cero" onclick="recibirValor1(0)">0</button>
+          <button id="btnPunto">.</button>
+          <button id="btnIgual" onclick="igual()">=</button>
         </div>
       </div>
     </section>
