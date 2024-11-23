@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #2f3e46;
+    
+}
+
+
+p::before{
+    content: attr(type);
+    display: block;
+    margin: 5px;
+    font-size: 17px;
+    color: black;
+}
+
+
+input{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid;
+    background: none; 
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #354f52;
+}
+
+h2{
+    margin: 10px 2px;
+    width: 200px;
+    color: #354f52;
+    border-bottom: 3px solid #354f52;
+}
+
+form{
+    width: 200px;
+    height: 425px;
+    background-color: #cad2c5;
+    border-radius: 10px;
+    padding: 25px 18px;
+    box-shadow: 15px 10px 5px 5px rgb(113, 116, 111);
+}
+
+.formulario header{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+
+}
+
+button{
+    padding: 10px 76px;
+}
